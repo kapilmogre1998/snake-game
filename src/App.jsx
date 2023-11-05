@@ -8,10 +8,10 @@ function App() {
   useEffect(() => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
-    context.fillStyle = 'lightblue';
-    context.strokestyle = 'darkblue';
+    context.fillStyle = '#1C2833';
+    // context.strokestyle = 'darkblue';
     context.fillRect(0, 0, canvas.width, canvas.height);
-    context.strokeRect(0, 0, canvas.width, canvas.height);
+    // context.strokeRect(0, 0, canvas.width, canvas.height);
   }, [])
 
   const drawSnake = () => {
@@ -19,9 +19,9 @@ function App() {
       const canvas = canvasRef.current;
       const context = canvas.getContext('2d');
       context.fillStyle = 'lightblue';
-      context.strokestyle = 'darkblue';
+      // context.strokestyle = 'lightblue';
       context.fillRect(x, y, 10, 10);
-      context.strokeRect(x, y, 10, 10);
+      // context.strokeRect(x, y, 10, 10);
     })
   }
 
@@ -31,12 +31,12 @@ function App() {
 
   return (
     <div className='game-canvas' >
-      <canvas ref={canvasRef} width='400' height='400' ></canvas>
-      <div className='flex justify-between' >
-        <div>&#x2190;</div>
-        <div>&#x2191;</div>
-        <div>&#x2192;</div>
-        <div>&#x2193;</div>
+      <canvas ref={canvasRef} width='450' height='450' ></canvas>
+      <div className='flex justify-between'>
+        <div style={{ backgroundColor: '#283747' }} className='flex-grow text-center px-2 py-3 text-white cursor-pointer'  >&#x2190;</div>
+        <div style={{ backgroundColor: '#283747' }} className='flex-grow text-center px-2 py-3 text-white cursor-pointer'  >&#x2191;</div>
+        <div style={{ backgroundColor: '#283747' }} className='flex-grow text-center px-2 py-3 text-white cursor-pointer'  >&#x2192;</div>
+        <div style={{ backgroundColor: '#283747' }} className='flex-grow text-center px-2 py-3 text-white cursor-pointer'  >&#x2193;</div>
       </div>
     </div>
   )

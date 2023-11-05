@@ -538,6 +538,33 @@ video {
   display: flex;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
